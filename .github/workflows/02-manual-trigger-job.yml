@@ -17,3 +17,6 @@ jobs:
         creds: ${{secrets.AZURE_CREDENTIALS}}
 
 
+  az ad sp create-for-rbac --name "aberges1" --role contributor \
+                              --scopes /subscriptions/717df2b2-5934-449a-932e-58f78db21faf/resourceGroups/SI-QCOG-dev-1 \
+                              --sdk-auth
